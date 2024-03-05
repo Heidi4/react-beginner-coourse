@@ -8,26 +8,31 @@ function Fruits() {
       name: "Apple",
       price: 10,
       emoji: "🍎",
+      soldout: true,
     },
     {
       name: "Mango",
       price: 5,
       emoji: "🥭",
+      soldout: true,
     },
     {
       name: "Banana",
-      price: 2,
+      price: 9,
       emoji: "🍌",
+      soldout: false,
     },
     {
       name: "Orange",
-      price: 2,
+      price: 6,
       emoji: "🍊",
+      soldout: false,
     },
     {
       name: "Pears",
       price: 2,
       emoji: "🍐",
+      soldout: true,
     },
   ];
   return (
@@ -38,7 +43,8 @@ function Fruits() {
           key={fruit.name}
           name={fruit.name} 
           price={fruit.price} 
-          emoji={fruit.emoji} />
+          emoji={fruit.emoji}
+          soldout={fruit.soldout} />
         ))}
       </ul>
     </div>
