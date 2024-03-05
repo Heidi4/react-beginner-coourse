@@ -3,12 +3,15 @@ import Welcome from "./Welcome";
 import Code from "./Code";
 
 function Conditional() {
-  const display = false;
+  let message;
+  const display = true;
+
   if (display) {
-return <Welcome></Welcome>
+    message =<h1>This is message1</h1>;
   } else {
-    return <Code></Code>
+    message = <h1>This is message2</h1>;
   }
+  return message
 }
 
 export default Conditional;
