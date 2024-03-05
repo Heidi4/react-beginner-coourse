@@ -1,4 +1,4 @@
-function Hello({person}) {
+function Hello({ person }) {
   return (
     <div>
       <h1>
