@@ -6,7 +6,10 @@ function Form() {
   function handleChange(e) {
     setName(e.target.value);
   }
-
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(name);
+  }
   return (
     <div>
       <form>
@@ -25,6 +28,7 @@ function Form() {
           value={name.lastName}
           placeholder="Lastname"
         />
+        <button onClick={(e) => handleSubmit(e)}>Add</button>
       </form>
     </div>
   );
